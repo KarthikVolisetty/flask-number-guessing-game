@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Sep  4 14:13:05 2024
+
+@author: karth
+"""
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+</head>
+<body>
+    <h1>Number Guessing Game</h1>
+    <form method="POST">
+        <label for="lowerBound">Enter the lower bound:</label><br>
+        <input type="number" id="lowerBound" name="lowerBound" required><br><br>
+
+        <label for="upperBound">Enter the upper bound:</label><br>
+        <input type="number" id="upperBound" name="upperBound" required><br><br>
+
+        <label for="userGuess">Enter your guess:</label><br>
+        <input type="number" id="userGuess" name="userGuess" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if result %}
+        <h2>{{ result }}</h2>
+    {% endif %}
+</body>
+</html>
